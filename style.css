@@ -1,0 +1,554 @@
+/* =====================================================
+   GENEL
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #faf9ff;
+}
+
+
+/* =====================================================
+   4 ANA GÖRSEL
+===================================================== */
+
+.sayfa {
+    width: 100%;
+    height: 100vh;
+
+    min-height: 650px;
+
+    position: relative;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* 1. GÖRSEL */
+
+.ana-sayfa {
+    background-image: url("images/ana-sayfa.png");
+}
+
+
+/* 2. GÖRSEL */
+
+.portfolio {
+    background-image: url("images/portfolio.png");
+}
+
+
+/* 3. GÖRSEL */
+
+.hakkimda {
+    background-image: url("images/hakkimda.png");
+}
+
+
+/* 4. GÖRSEL */
+
+.iletisim {
+    background-image: url("images/iletisim.png");
+}
+
+
+/* =====================================================
+   MENÜ
+===================================================== */
+
+.menu {
+    position: absolute;
+
+    top: 3%;
+
+    right: 3%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 0;
+
+    z-index: 50;
+}
+
+
+.menu a {
+    color: #38204f;
+
+    text-decoration: none;
+
+    font-size: clamp(14px, 1.25vw, 24px);
+
+    font-weight: 300;
+
+    padding: 0 14px;
+
+    transition: 0.25s;
+}
+
+
+.menu a:hover {
+    opacity: 0.5;
+}
+
+
+.ayrac {
+    width: 5px;
+
+    height: 38px;
+
+    background-color: #38204f;
+
+    border-radius: 3px;
+}
+
+
+/* =====================================================
+   ANA SAYFA YAZILARI
+===================================================== */
+
+.ana-yazi {
+    position: absolute;
+
+    width: 80%;
+
+    left: 10%;
+
+    top: 40%;
+
+    text-align: center;
+
+    color: #426486;
+}
+
+
+.ana-yazi p {
+    font-size: clamp(18px, 1.45vw, 28px);
+
+    line-height: 1.5;
+}
+
+
+.ana-yazi strong {
+    color: #38204f;
+
+    font-size: 40px;
+}
+
+
+/* =====================================================
+   TIKLA
+===================================================== */
+
+.tikla-bolumu {
+    position: absolute;
+
+    left: 50%;
+
+    top: 55%;
+
+    transform: translateX(-50%);
+
+    text-align: center;
+}
+
+
+.tikla-bolumu p {
+    color: #426486;
+
+    font-size: clamp(17px, 1.3vw, 26px);
+
+    margin-bottom: 15px;
+}
+
+
+.tikla {
+    width: 180px;
+
+    height: 75px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50px;
+
+    background-color: #38204f;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 29px;
+
+    transition: 0.3s;
+}
+
+
+.tikla:hover {
+    transform: scale(1.05);
+}
+
+
+/* =====================================================
+   PORTFOLYO
+===================================================== */
+
+.portfolio-baslik {
+    position: absolute;
+
+    top: 17%;
+
+    left: 5%;
+
+    color: #38204f;
+
+    font-size: clamp(40px, 4vw, 80px);
+
+    font-weight: 300;
+}
+
+
+.portfolio-kutulari {
+    position: absolute;
+
+    left: 4%;
+
+    top: 34%;
+
+    width: 68%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.portfolio-kutu {
+    width: 23%;
+
+    color: #426486;
+
+    text-decoration: none;
+
+    text-align: center;
+}
+
+
+.proje-gorsel {
+    width: 100%;
+
+    aspect-ratio: 1 / 0.8;
+
+    background-color: #7065d8;
+
+    border-radius: 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: 0.3s;
+}
+
+
+.portfolio-kutu:hover .proje-gorsel {
+    transform: translateY(-8px);
+
+    opacity: 0.85;
+}
+
+
+.proje-gorsel span {
+    color: white;
+
+    font-size: 45px;
+
+    font-weight: 300;
+}
+
+
+.portfolio-kutu h2 {
+    margin-top: 15px;
+
+    font-size: clamp(15px, 1.2vw, 24px);
+
+    font-weight: 300;
+
+    line-height: 1.3;
+}
+
+
+.alt-baslik {
+    position: absolute;
+
+    bottom: 4%;
+
+    left: 5%;
+
+    color: #426486;
+
+    font-size: clamp(40px, 4vw, 80px);
+
+    font-weight: 300;
+}
+
+
+/* =====================================================
+   HAKKIMDA
+===================================================== */
+
+.hakkimda-icerik {
+    position: absolute;
+
+    top: 30%;
+
+    right: 10%;
+
+    width: 38%;
+
+    text-align: center;
+
+    color: #426486;
+}
+
+
+.hakkimda-icerik h1 {
+    color: #38204f;
+
+    font-size: clamp(30px, 2.5vw, 50px);
+
+    font-weight: 300;
+
+    margin-bottom: 50px;
+}
+
+
+.deneyim {
+    margin-bottom: 40px;
+}
+
+
+.deneyim p {
+    font-size: clamp(17px, 1.4vw, 28px);
+
+    line-height: 1.5;
+}
+
+
+.egitim {
+    position: absolute;
+
+    left: 8%;
+
+    bottom: 12%;
+
+    color: #38204f;
+
+    text-align: center;
+
+    font-size: clamp(14px, 1vw, 20px);
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   İLETİŞİM
+===================================================== */
+
+.iletisim-icerik {
+    position: absolute;
+
+    top: 35%;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    text-align: center;
+
+    color: #38204f;
+}
+
+
+.iletisim-icerik h1 {
+    font-size: clamp(35px, 3vw, 60px);
+
+    font-weight: 300;
+
+    margin-bottom: 40px;
+}
+
+
+.iletisim-icerik p {
+    font-size: clamp(17px, 1.4vw, 28px);
+
+    margin: 20px 0;
+}
+
+
+/* =====================================================
+   PROJE SAYFALARI
+===================================================== */
+
+.proje-sayfasi {
+    min-height: 100vh;
+
+    padding: 100px 6%;
+
+    background-color: #faf9ff;
+
+    position: relative;
+}
+
+
+.geri-don {
+    position: absolute;
+
+    top: 30px;
+
+    left: 30px;
+
+    color: #38204f;
+
+    text-decoration: none;
+
+    font-size: 18px;
+}
+
+
+.proje-sayfasi h1 {
+    text-align: center;
+
+    color: #38204f;
+
+    font-size: clamp(35px, 4vw, 70px);
+
+    font-weight: 300;
+
+    margin-bottom: 60px;
+}
+
+
+.proje-galerisi {
+    max-width: 1400px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+.proje-resim {
+    min-height: 350px;
+
+    background-color: #7065d8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.proje-resim p {
+    color: white;
+
+    font-size: 25px;
+}
+
+
+/* =====================================================
+   MOBİL
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .sayfa {
+        min-height: 100vh;
+
+        background-position: center;
+    }
+
+
+    .menu {
+        top: 20px;
+
+        right: 10px;
+    }
+
+
+    .menu a {
+        font-size: 11px;
+
+        padding: 0 5px;
+    }
+
+
+    .ayrac {
+        width: 3px;
+
+        height: 22px;
+    }
+
+
+    .ana-yazi {
+        width: 90%;
+
+        left: 5%;
+    }
+
+
+    .tikla-bolumu {
+        top: 58%;
+    }
+
+
+    .portfolio-kutulari {
+        width: 92%;
+
+        left: 4%;
+
+        gap: 8px;
+    }
+
+
+    .portfolio-kutu h2 {
+        font-size: 10px;
+    }
+
+
+    .proje-galerisi {
+        grid-template-columns: 1fr;
+    }
+
+}
